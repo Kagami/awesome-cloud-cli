@@ -6,14 +6,14 @@ A curated list of useful CLI tools for cloud file hostings.
 
 Download file via terminal given link to particular cloud service. Currently only `gdrive` tool requires authentication.
 
-| Hosting | Tool | Install (Debian) | Usage |
-| --- | --- | --- | --- |
-| [Baidu Cloud](http://pan.baidu.com/) | [pan-baidu-download](https://github.com/banbanchs/pan-baidu-download) | ``git clone https://github.com/banbanchs/pan-baidu-download && ln -s `pwd`/pan-baidu-download/bddown_cli.py ~/.local/bin/pan`` | `pan download http://pan.baidu.com/...` |
-| [Mega](https://mega.nz/) | [megatools](https://github.com/megous/megatools) | `apt-get install megatools` | `megadl https://mega.nz/...` |
-| [Google Drive](https://www.google.com/drive/) | [gdrive](https://github.com/prasmussen/gdrive) | ``GOPATH=`pwd` go get github.com/prasmussen/gdrive && ln -s `pwd`/bin/gdrive ~/.local/bin`` | `gdrive download ABC123...` |
-| [Amazon Cloud Drive](https://www.amazon.com/clouddrive/) | [acd_cli](https://github.com/yadayada/acd_cli) | *TODO* | *TODO* |
-| [Yandex.Disk](https://disk.yandex.com/) | *TODO* | *TODO* | *TODO* |
-| [Cloud Mail.Ru](https://cloud.mail.ru/) | *TODO* | *TODO* | *TODO* |
+| Hosting | Tool | Usage |
+| --- | --- | --- |
+| [Mega](https://mega.nz/) | [megatools](https://github.com/megous/megatools) | `megadl https://mega.nz/...` |
+| [Baidu Cloud](http://pan.baidu.com/) | [pan-baidu-download](https://github.com/banbanchs/pan-baidu-download) | `pan download http://pan.baidu.com/...` |
+| [Google Drive](https://www.google.com/drive/) | [gdrive](https://github.com/prasmussen/gdrive) | `gdrive download ABC123...` |
+| [Amazon Cloud Drive](https://www.amazon.com/clouddrive/) | [acd_cli](https://github.com/yadayada/acd_cli) | *TODO* |
+| [Yandex.Disk](https://disk.yandex.com/) | *TODO* | *TODO* |
+| [Cloud Mail.Ru](https://cloud.mail.ru/) | *TODO* | *TODO* |
 
 ### Upload
 
