@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        k2nblog ad skipper
 // @namespace   http://k2nblog.com/ad-skipper
-// @description Skip ads on sh.st, adf.ly, j.gs and q.gs
+// @description Skip ads at sh.st, adf.ly, j.gs and q.gs
 // @include     http://sh.st/*
 // @include     http://adf.ly/*
 // @include     http://j.gs/*
@@ -10,12 +10,10 @@
 // @grant       none
 // ==/UserScript==
 
-// !NOTE! There are few known cases which currently can't be avoided
-// with this user.js:
-// * In order to avoid `/ad/locked` redirects disable cookies for
-// adf.ly, j.gs and q.gs
-// * In order to avoid ads on `sh.st/ab123` pages set user agent
-// `curl/7.45.0` for site sh.st
+// TODO: embedupload.
+// NOTE: There are few known cases which currently can't be avoided by this user.js:
+// * In order to skip `/ad/locked` redirects disable cookies for adf.ly, j.gs and q.gs
+// * In order to skip ads at `sh.st/ab123` pages set user agent `curl/7.45.0` for site sh.st
 
 // Written by deobfuscating adf.ly code.
 function decodeLink(cipher) {
