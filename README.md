@@ -26,7 +26,7 @@ Retrieve original link via terminal given particular URL shortener.
 | Service | Usage |
 | --- | --- |
 | [goo.gl](https://goo.gl/), [sh.st](https://shorte.st/) | `curl -sIo/dev/null -w '%{redirect_url}' http://...` |
-| [adf.ly, j.gs, q.gs](https://adf.ly/) | `curl -s http://adf.ly/... | awk -F\' '/ysmm/{print $2}' | python -c 'import sys;from base64 import b64decode;from functools import reduce;print(b64decode("".join(reduce(lambda acc,el: (acc[0],el[1]+acc[1]) if el[0]&1 else (acc[0]+el[1],acc[1]), enumerate(sys.stdin.read()), ("", ""))))[2:].decode("utf-8"))'` |
+| [adf.ly, j.gs, q.gs](https://adf.ly/) | `curl -s http://adf.ly/... \| awk -F\' '/ysmm/{print $2}' \| python -c 'import sys;from base64 import b64decode;from functools import reduce;print(b64decode("".join(reduce(lambda acc,el: (acc[0],el[1]+acc[1]) if el[0]&1 else (acc[0]+el[1],acc[1]), enumerate(sys.stdin.read()), ("", ""))))[2:].decode("utf-8"))'` |
 
 ### Misc
 
